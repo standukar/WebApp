@@ -4,7 +4,10 @@
    http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
    
    <bean id = "helloController" class = "abc.xy.controllers.HelloController"></bean>
-   <bean id = "viewResolver" class = "org.springframework.web.servlet.view.InternalResourceViewResolver">
+     <bean id = "customerCtrl" class = "abc.xy.controllers.CustomerController"></bean>
+  
+     <bean id = "viewResolver" class = "org.springframework.web.servlet.view.InternalResourceViewResolver">
+  
    <property name="prefix" value = "pages/" />
    <property name="suffix" value = ".jsp"  />
    
